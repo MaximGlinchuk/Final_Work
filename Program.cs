@@ -8,3 +8,11 @@
     }
     return strArray;
 }
+
+Console.WriteLine("Задайте размер массива");
+int SizeCount = Convert.ToInt32(Console.ReadLine());
+
+string[] array = GetArray(SizeCount);
+
+Console.WriteLine($"[{String.Join(";", array)}]");
+
